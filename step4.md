@@ -26,9 +26,7 @@ Selecting `RECOMMENDATIONS` produces
 
 The philosophy underlying the automatic visualizations is to make it easy for the data scientist to quickly understand their data fields, but it does not make decisions for the data scientist. 
 
-There are a number of additional useful graphs that can be navigated to fully understand your data prior to modeling. In addition, one can create their own custom graph.
-
-
+There are a number of additional useful graphs that can be navigated to fully understand your data prior to modeling. 
 
 
 
