@@ -1,6 +1,6 @@
 ## Step 5: Split Data
 
-Splitting data into train and test sets allows models to be evaluated on holdout data. To use the Dataset Splitter utility, right click the dataset and select `SPLIT`
+Splitting data into train and test sets allows models to be built with the train set and evaluated on the test data. This protects against overfit and yields more accurate error estimates. To use the Dataset Splitter utility, right click the dataset and select `SPLIT`
 
 ![](images/05_split_01.png)
 

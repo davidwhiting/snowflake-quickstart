@@ -16,10 +16,10 @@ Scrolling to the right, inspect the `bad_loans` column, our target variable.
 
 ![](images/03_details_2.png)
 
-The target `bad_loans` is Boolean, has 38,980 observations, and has a mean value of 0.1592. This means that 15.92% of the customers (rows) in this dataset have a loan that was not paid off. 
+The target `bad_loans` is Boolean with 38,980 observations and has a mean value of 0.1592. This means that 15.92% of the customers (rows) in this dataset have a loan that was not paid off. 
 
 Clicking the `DATASET ROWS` button on the upper right yields a spreadsheet format.
 
 ![](images/03_details_3.png)
 
-This is helpful in understanding the layout of the data. A quick inspection of your dataset using details is a good practice that we always recommended.
+This is helpful in understanding the layout of the data. A quick inspection of your dataset using `Details` is a good practice that we always recommended.

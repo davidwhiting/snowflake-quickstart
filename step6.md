@@ -8,9 +8,11 @@ We start an experiment from the `Datasets` view by clicking on the line correspo
 
 ![](images/06_intro_1.png)
 
-This launches the following form for designing an experiment.
+This opens the following form for configuring an experiment.
 
 ![](images/06_setup_01.png)
+
+The fields are
 
 1. (Optional) Name your experiment. This is especially helpful for leaderboards in `Projects`.
 2. The prefilled training dataset.
@@ -22,11 +24,11 @@ This launches the following form for designing an experiment.
 8. (Optional) Select weight column.
 9. (Optional) Select a time column. This switches Driverless AI into a time-series mode, where specialized data, feature engineering, and model settings are enabled.
 
-For our experiment, enter "Baseline" as the display name (1). Next select the `TEST DATASET` file `test` (5). The `desc` column contains a written explanation from the customer describing the reason for requesting a loan. Although Driverless AI has extensive NLP (natural language processing) capabilities, we omit them in this baseline model. Thus using `DROPPED COLUMNS` (3), select `desc`:
+For our experiment, enter "Baseline" as the display name (#1). Next select the `TEST DATASET` file `test` (#5). The `desc` column contains a written explanation from the customer describing the reason for requesting a loan. Although Driverless AI has extensive NLP (natural language processing) capabilities, we omit them in this baseline model. Thus using `DROPPED COLUMNS` (#3), select `desc`:
 
 ![](images/06_setup_30.png)
 
-Next select `bad_loan` as the `TARGET COLUMN` (6). You will have to scroll down, since `bad_loan` is the next-to-last variable in the dataset
+Next select `bad_loan` as the `TARGET COLUMN` (#6). You will have to scroll down, since `bad_loan` is the next-to-last variable in the dataset
 
 ![](images/06_setup_31.png)
 
@@ -46,18 +48,18 @@ These include
 
 For our experiment, 
 
-* The target variable is `bool` (Boolean) with 31,184 observations, 4963 of which are equal to 1 (1). The `CLASSIFICATION` button (3) is enabled by default because the target is Boolean.
-* The `ACCURACY` dial is set to 5. Higher values of accuracy are more computationally intensive. The description under (6) shows that `ACCURACY` impacts how features are evaluated (model & validation strategy) and what form the final pipeline will take (individual models vs. ensembles and validation strategy).
+* The target variable is `bool` (Boolean) with 31,184 observations, 4963 of which are equal to 1 (#1). The `CLASSIFICATION` button (#3) is enabled by default because the target is Boolean.
+* The `ACCURACY` dial is set to 5. Higher values of accuracy are more computationally intensive. The description under (#6) shows that `ACCURACY` impacts how features are evaluated (model & validation strategy) and what form the final pipeline will take (individual models vs. ensembles and validation strategy).
 * The `TIME` dial is set to 4. Higher values of `TIME` allow for longer feature evolution. `TIME` levels also include early stopping rules for efficiency.
 * Note: Higher values of `ACCURACY` and `TIME` do not always lead to better predictive models. Model performance should always be evaluated using a holdout test data set.
 * The `INTERPRETABILITY` dial ranges from 1 (least interpretable = most complex) to 10 (most interpretable = least complex). `INTERPRETABILITY` set to 7 or higher enable monotonicity constraints, which significantly increases model understanding.
 
 
-Click on the `REPRODUCIBLE` button to enable reproducibility. This may be important for regulatory reasons or, as in our case, for educational purposes. Also select AUC as the scorer (4)
+Click on the `REPRODUCIBLE` button to enable reproducibility. This may be important for regulatory reasons or, as in our case, for educational purposes. Also select AUC as the scorer (#4)
 
 ![](images/06_setup_04.png)
 
-Clicking on `EXPERT SETTINGS` (5) exposes an immense array of options and settings
+Clicking on `EXPERT SETTINGS` (#5) exposes an immense array of options and settings
 
 ![](images/06_setup_06.png)
 
@@ -160,11 +162,11 @@ You can view other model performance metrics, including Precision-Recall
 
 ![](images/06_complete_05.png)
 
-Lift
+Lift chart
 
 ![](images/06_complete_06.png)
 
-Gains
+Gains chart
 
 ![](images/06_complete_07.png)
 

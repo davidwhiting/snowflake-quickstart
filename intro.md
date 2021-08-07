@@ -1,8 +1,14 @@
+# AutoML with Snowflake and H2O Driverless AI
+
 ## Introduction
 
-H2O Driverless AI is an artificial intelligence (AI) platform for automatic machine learning. Driverless AI automates some of the most difficult data science and machine learning workflows such as feature engineering, model validation, model tuning, model selection, and model deployment. It aims to achieve highest predictive accuracy, comparable to expert data scientists, but in much shorter time thanks to end-to-end automation. Driverless AI also offers automatic visualizations and machine learning interpretability (MLI). Especially in regulated industries, model transparency and explanation are just as important as predictive performance. Modeling pipelines (feature engineering and models) are exported (in full fidelity, without approximations) both as Python modules and as Java standalone scoring artifacts.
+H2O Driverless AI is an artificial intelligence (AI) platform for automatic machine learning. Driverless AI automates the most difficult data science and machine learning workflows such as feature engineering, model validation, model tuning, model selection, and model deployment. Modeling pipelines (feature engineering and models) are exported as standalone scoring artifacts.
 
-In this tutorial, we present a thorough introduction to the Driverless AI platform through an example using the famous Lending Club Loans dataset (citation). Our goal is to predict loan default for Lending Club customers based on historic data. We will use Driverless AI to 
+This tutorial presents a quick introduction to the Driverless AI platform on Snowflake. Our goal is to build a classification model that predicts whether a Lending Club customer will default on their loan. 
+
+
+
+We will use Snowflake and Driverless AI to 
 
 - **import** the data from Snowflake, 
 - **explore** the data using summary descriptive statistics and automated visualizations (AutoViz), 
@@ -11,19 +17,27 @@ In this tutorial, we present a thorough introduction to the Driverless AI platfo
 - **understand** the model through MLI (machine learning interpretability),
 - **deploy** the model into production in a Snowflake system.
 
+### Prerequisites
+
+* A Snowflake account and access to Snowflake's _Partner Connect_.
+* Know how to load data into Snowflake (documentation [here](https://docs.snowflake.com/en/user-guide-data-load.html)).
+* A basic understanding of data science and machine learning concepts.
 
 
+### What You'll Learn
+
+* How to use Snowflake's "Partner Connect" to create a Driverless AI instance
+* How to use Driverless AI to build a supervised learning classification model.
+* How to deploy the finished model pipeline as a Snowflake JAVA UDF. 
+
+### Assets
+
+The Lending Club Loans data file is available for download here:
 
 
-
-
-
-
-
-
-
-
-
+<button>
+  [Download loans.csv file](https://snowflake-workshop-lab.s3.amazonaws.com/h2o/loans.csv)
+</button>
 
 
 

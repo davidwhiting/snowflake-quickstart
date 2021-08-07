@@ -33,7 +33,7 @@ By default, an automated report is created for each experiment that is run. Down
  
 ![](images/07_autodoc_0.png)
 
-The document that is created is a very thorough summary of the experiment, documenting in detail the data, settings, and methodologies used to create the final pipeline.
+The document that is created is a very thorough summary of the experiment in the form of a white paper, documenting in detail the data, settings, and methodologies used to create the final pipeline.
 
 ![](images/07_autodoc_1.png)
 
@@ -62,7 +62,7 @@ This pipeline is also available in the AutoReport, along with explanatory notes 
 * 28 total features, both original and engineered.
 * Two LightGBM models created with 4-fold cross validation each.
 * A stacked ensemble blending the two LightGBM models.
-* The output are probabilities for `bad_loan = False` and `bad_loan = True`.
+* The outputs are probabilities for `bad_loan = False` and `bad_loan = True`.
 
 
 

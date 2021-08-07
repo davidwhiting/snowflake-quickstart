@@ -12,7 +12,7 @@ Enter into the form
 
 * the Database `Lendingclub`, 
 * the Schema as `public`,
-* the Warehouse as `demo_wh`,
+* the Warehouse as `demo_wh` (or whatever your Warehouse name is),
 * the Name as `loans.csv`,
 * the SQL Query `select * from loans`. 
 
@@ -20,7 +20,7 @@ Then click the `CLICK TO MAKE QUERY` button. This imports the data into the Driv
 
 ![](images/02_import_5.png)
 
-The dataset is now available for next steps
+The dataset is now available for next steps in Driverless AI
 
 ![](images/02_import_3.png)
 
